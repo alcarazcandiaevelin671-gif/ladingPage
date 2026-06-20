@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guaraní-JoparaAI | UNVES</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Fondo Decorativo de Banderas -->
+    <div class="background-icons">
+        <div class="bg-flag icon-py"><img src="https://flagcdn.com/py.svg" alt="Paraguay"></div>
+        <div class="bg-flag icon-es"><img src="https://flagcdn.com/es.svg" alt="España"></div>
+        <div class="bg-flag icon-en"><img src="https://flagcdn.com/us.svg" alt="USA"></div>
+        <div class="bg-flag icon-de"><img src="https://flagcdn.com/de.svg" alt="Alemania"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">Guaraní-Jopara<span>AI</span></div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#informacion">Proyecto</a></li>
+            <li><a href="#nosotros">Autores</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <div class="curved-flags">
+                <div class="flag-circle"><img src="https://flagcdn.com/py.svg" alt="Paraguay"></div>
+                <div class="flag-circle"><img src="https://flagcdn.com/es.svg" alt="España"></div>
+                <div class="flag-circle"><img src="https://flagcdn.com/us.svg" alt="USA"></div>
+                <div class="flag-circle"><img src="https://flagcdn.com/de.svg" alt="Alemania"></div>
+            </div>
+            <h1>Traductor Multilingüe Basado en Inteligencia Artificial para la Inclusión del <span>Guaraní y Jopara</span></h1>
+            <p>Tecnología avanzada para una comunicación natural y preservación cultural en Paraguay.</p>
+            <a href="#informacion" class="btn-main">Conocer más</a>
+        </div>
+    </header>
+
+    <section id="informacion" class="info-section">
+        <div class="container">
+            <h2 class="main-title">Innovación <span>Lingüística</span></h2>
+            <div class="cards-container">
+                <div class="info-card">
+                    <div class="card-icon">🤖</div>
+                    <h3>¿Qué es Guaraní-JoparaAI?</h3>
+                    <p>Un traductor multilingüe que incorpora inteligencia artificial para facilitar la comunicación entre personas de diferentes idiomas.</p>
+                    <button class="btn-more" onclick="abrirDetalles('que-es')">Ver más</button>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-icon">⚠️</div>
+                    <h3>El Problema</h3>
+                    <p>Las herramientas actuales no comprenden el contexto cultural ni el uso cotidiano del jopara, generando barreras comunicativas.</p>
+                    <button class="btn-more" onclick="abrirDetalles('problema')">Ver más</button>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-icon">✨</div>
+                    <h3>Nuestra Meta</h3>
+                    <p>Fomentar la inclusión lingüística y fortalecer el uso de lenguas locales en entornos digitales de manera eficiente.</p>
+                    <button class="btn-more" onclick="abrirDetalles('meta')">Ver más</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="authors">
+        <div class="container">
+            <h2>Equipo de Investigación</h2>
+            <div class="author-grid">
+                <div class="author-card">
+                    <h3>Evelin Alcaraz Candia</h3>
+                    <p>alcarazcandiaevelin671@gmail.com</p>
+                    <span>Villarrica - Paraguay</span>
+                </div>
+                <div class="author-card">
+                    <h3>Liz Araceli Talavera</h3>
+                    <p>liztalavera2001@gmail.com</p>
+                    <span>Villarrica - Paraguay</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="form-box">
+            <h2>Hablemos del Proyecto</h2>
+            <form id="contactForm">
+                <!-- Configuración para el envío de correos -->
+                <input type="hidden" name="_cc" value="alcarazcandiaevelin671@gmail.com">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje..." rows="4" required></textarea>
+                <button type="submit">Enviar al equipo</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Modal Elegante -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="cerrarModal()">&times;</span>
+            <h2 id="modalTitle">Título</h2>
+            <p id="modalText">Contenido aquí...</p>
+            <button class="btn-more" onclick="cerrarModal()">Entendido</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Universidad Nacional de Villarrica del Espíritu Santo (UNVES)</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
